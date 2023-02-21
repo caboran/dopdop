@@ -19,10 +19,8 @@ echo -e "${BoZabo} ┌───────────────────�
 echo -e "${BoZabo} │   Installing XMailServer   │ \e[0m"
 echo -e "${BoZabo} └───────────────────────────┘ \e[0m"
 echo " "
-sudo su
 apt-get update && apt-get upgrade -y && apt-get install apache2 php -y
 service apache2 restart
-sudo apt-get update
 sudo apt-get install postfix -y
 sudo dpkg-reconfigure postfix
 #sudo -i
